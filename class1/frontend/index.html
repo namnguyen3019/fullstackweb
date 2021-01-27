@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <title>TODO app</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Todo App</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="index.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+
+  <body>
+    <div>TODO APP</div>
+    <div id="allTodoList">
+      <div id="toLearn">
+        <h2>To Learn</h2>
+        <button onclick="addToDo(this)">Add a new ToDo</button>
+        <ul>
+          <li>Javascript</li>
+          <li>Database</li>
+          <li>Coding Interview</li>
+        </ul>
+      </div>
+
+      <div id="toBuy">
+        <h2>To Buy</h2>
+        <button onclick="addToDo(this)">Add a new ToDo</button>
+        <ul id="toBuyUl">
+          <li>House</li>
+          <li>Car</li>
+          <li>Mango</li>
+        </ul>
+      </div>
+
+      <div id="toRead">
+        <h2>To Read</h2>
+        <button onclick="addToDo(this)">Add a new ToDo</button>
+        <ul>
+          <li>Three Kindoms</li>
+          <li>Deep Work</li>
+          <li>How I play</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <input type="text" id="newList" value="" />
+      <button id="addAListBtn" onclick="addANewList(this)">Add</button>
+      <button id="cancelAddAListBtn" onclick="cancelANewList(this)">Cancel</button>
+    </div>
+
     <script src="main.js"></script>
-</head>
-
-<body>
-    <div id=app></div>
-</body>
-
+  </body>
 </html>
