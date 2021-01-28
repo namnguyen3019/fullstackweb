@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Todo App</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="index.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+
+  <body>
+    <div>TODO APP</div>
+    <div id="allTodoList">
+      <div id="toRead">
+        <h2>To Read</h2>
+        <button onclick="addToDo(this)">Add a new ToDo</button>
+        <ul>
+          <li>Three Kindoms</li>
+          <li>Deep Work</li>
+          <li>How I play</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Add a new list form -->
+    <div>
+      <input type="text" id="newList" value="" />
+      <button id="addAListBtn" onclick="addANewList(this)">Add a new list</button>
+      <button id="cancelAddAListBtn" onclick="cancelANewList(this)">Cancel</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

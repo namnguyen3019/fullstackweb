@@ -3,7 +3,7 @@ var allTodoList = document.getElementById("allTodoList");
 // Add a new list
 window.onload = function () {
   const server = "http://localhost:3000/";
-  fetch(server)
+  fetch(server, {})
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -67,7 +67,8 @@ addToDo = (e) => {
   
     cancelBtn.addEventListener("click", function (e) {
       console.log("Remove a new lis");
-      ulElement.removeChild(newLi);
+      console.log(e.target)
+      ulElement.removeChild(e.target);
     });
   };
 
