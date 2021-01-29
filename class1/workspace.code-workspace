@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "class1",
+			"path": "."
+		},
+		{
+			"name": "fullstackweb",
+			"path": "../fullstackweb"
+		}
+	],
+	"settings": {}
+}
