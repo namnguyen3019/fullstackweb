@@ -3,20 +3,16 @@ import AddNewListForm from "./AddNewListForm";
 import ListDisplay from "./ListDisplay";
 
 const App = () => {
-	const [todoList, setTodoList] = useState([]);
+	const [todoList, setTodoList] = useState({});
 
 	useEffect(() => {
 		const host = "http://localhost:5000";
 		fetch(`${host}/todolist`)
 			.then((res) => res.json())
 			.then((data) => {
-				const list = []
-				for (var i in data) {
-					list.push(data[i]);
-				}
-				setTodoList(list);
+				setTodoList(data)
 			});
-	},);
+	}, []);
 
 	return (
 		<div>

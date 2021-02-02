@@ -4,8 +4,7 @@ const AddNewListForm = () => {
     const [textInput, setTextInput] = useState('')
 	const onSubmitForm = (e) => {
 		e.preventDefault();
-        // TODO: POSTING DATA
-
+		// TODO: POSTING DATA
 	};
 	const handleInputChange = (e) => {
         console.log(e.target.value)
